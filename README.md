@@ -27,3 +27,32 @@ The structure of this API is
 > rails g serializer user
 
 6. 
+
+
+
+# Deploying to heroku
+1. run command 
+> heroku create
+2.Edit gem file 
+```
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+```
+3. run bundle install
+> bundle install --without production
+
+4. add commit and push
+
+5. push it on heroku
+> git push heroku mater
+
+6. migrate db to heroku 
+> heroku run rails db:migrate
+
+7. Open application
+> heroku open
