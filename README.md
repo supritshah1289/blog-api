@@ -33,7 +33,8 @@ The structure of this API is
 # Deploying to heroku
 1. run command 
 > heroku create
-2.Edit gem file 
+
+2. Update Gemfile 
 ```
 group :development, :test do
   gem 'sqlite3'
@@ -43,18 +44,18 @@ group :production do
   gem 'pg'
 end
 ```
-3. run bundle install
+3. Run bundle install
 > bundle install --without production
 
-4. add commit and push
+4. Add commit and push
 
-5. push it on heroku
+5. Push it on heroku
 > git push heroku mater
 
-6. migrate db to heroku 
+6. Migrate db to heroku 
 > heroku run rails db:migrate
 
-7. seed dummy data
+7. Seed dummy data -- applies only if you like to push dummy data
 > heroku run rails db:seed
 
 7. Open application
