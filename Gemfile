@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 
+#serializer
+gem 'active_model_serializers', '~> 0.8.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
