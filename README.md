@@ -54,5 +54,8 @@ end
 6. migrate db to heroku 
 > heroku run rails db:migrate
 
+7. seed dummy data
+> heroku run rails db:seed
+
 7. Open application
 > heroku open
